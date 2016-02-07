@@ -22,7 +22,7 @@ jsHtml5AudioRecorder.prototype = {
     mediaPath: '',
     audioExtension: '',
     audioLink: '',    
-    phpFile: '',
+    serverURL: '',
     fftSize: 2048,
     audioTagId: 'audio',
     showStreamOnFinish: false,
@@ -180,7 +180,7 @@ jsHtml5AudioRecorder.prototype = {
                 }                
             }
         }.bind(this);
-        client.open("post", this.phpFile+'?'+datas, true);
+        client.open("post", this.serverURL+'?'+datas, true);
         client.setRequestHeader("X-Requested-With", "XMLHttpRequest");
         client.setRequestHeader("cache-Control", "no-store, no-cache, must-revalidate");
         client.setRequestHeader("cache-Control", "post-check=0, pre-check=0");
