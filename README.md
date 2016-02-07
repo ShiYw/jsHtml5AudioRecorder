@@ -5,6 +5,8 @@ JsHtml5AudioRecorder is a native html5 object that helps you record live audio s
 it provides echo cancellation and clear record.
 It works perfectly on Google Chrome, Firefox and Opera.
 
+I simply adjust it to python sever.
+
 
 1) How to install
 ---------------------
